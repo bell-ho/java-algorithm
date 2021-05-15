@@ -1,8 +1,9 @@
 package chap02;
 
+import java.util.Random;
 import java.util.Scanner;
 
-public class MaxOfArray {
+public class MaxOfArrayRand {
     static int maxOf(int[] a) {
         int max = a[0];
         for (int i = 0; i < a.length; i++) {
@@ -14,19 +15,19 @@ public class MaxOfArray {
     }
 
     public static void main(String[] args) {
+        Random rand = new Random();
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("최대값");
-        System.out.print("사람수 :");
+        System.out.print("사람수 : ");
         int n = sc.nextInt();
 
         int[] h = new int[n];
 
         for (int i = 0; i < n; i++) {
-            System.out.print("h[" + i + "]:");
-            h[i] = sc.nextInt();
+            h[i] = 100 + rand.nextInt(90);
+            System.out.println(h[i]);
         }
 
-        System.out.println("최대값 " + maxOf(h));
+        System.out.println(maxOf(h));
     }
 }
