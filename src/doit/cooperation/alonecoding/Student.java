@@ -10,7 +10,6 @@ public class Student {
         this.money = money;
     }
 
-
     public void ride(Taxi t, String destination) {
         t.ride(10000, destination);
         this.money -= 10000;
