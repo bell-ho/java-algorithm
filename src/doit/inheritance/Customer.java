@@ -7,7 +7,15 @@ public class Customer {
     int bonusPoint;
     double bonusRatio;
 
-    public Customer() {
+    /*public Customer() {
+        customerGrade = "SILVBR";   //기본등급
+        bonusRatio = 0.01;  //보너스 포인트 기본 적립 비율
+        System.out.println("Customer() 생성자 호출");
+    }*/
+
+    public Customer(int customerID, String customerName) {
+        this.customerID = customerID;
+        this.customerName = customerName;
         customerGrade = "SILVBR";   //기본등급
         bonusRatio = 0.01;  //보너스 포인트 기본 적립 비율
         System.out.println("Customer() 생성자 호출");
