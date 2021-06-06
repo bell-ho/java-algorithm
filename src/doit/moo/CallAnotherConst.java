@@ -1,4 +1,4 @@
-package doit;
+package doit.moo;
 
 //this로 다른 생성자 호출하기
 public class CallAnotherConst {

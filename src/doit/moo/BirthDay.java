@@ -1,4 +1,4 @@
-package doit;
+package doit.moo;
 
 public class BirthDay {
     // this는 생성된 인스턴스 스스로를 가리키는 예약어
