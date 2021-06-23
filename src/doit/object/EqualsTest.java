@@ -29,6 +29,11 @@ class Student {
         }
         return false;
     }
+
+    @Override
+    public int hashCode() {
+        return stId;
+    }
 }
 
 public class EqualsTest {
@@ -60,5 +65,11 @@ public class EqualsTest {
         } else {
             System.out.println("s1 , s3 동일하지 않음");
         }
+
+        System.out.println(s1.hashCode());
+        System.out.println(s3.hashCode());
+
+        System.out.println(System.identityHashCode(s1));
+        System.out.println(System.identityHashCode(s3));
     }
 }
