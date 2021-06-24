@@ -9,8 +9,10 @@ public class ClassTest {
         Class pClass2 = Person.class;
         System.out.println(pClass2.getName());
 
+
         Class pClass3 = Class.forName("doit.classex.Person");
         System.out.println(pClass3.getName());
 
     }
 }
+
