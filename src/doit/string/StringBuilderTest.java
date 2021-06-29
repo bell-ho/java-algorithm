@@ -12,7 +12,6 @@ public class StringBuilderTest {
         buffer.append(" android");
 
         System.out.println("연산후" + System.identityHashCode(buffer));
-
         javaStr = buffer.toString();
         System.out.println(javaStr);
         System.out.println("연결된 " + System.identityHashCode(javaStr));

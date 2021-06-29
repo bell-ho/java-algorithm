@@ -1,28 +1,9 @@
 package doit.collectionStudy.collection;
 
-public class Member implements Comparable<Member> {
+public class Member {
 
     private int memberId;
     private String memberName;
-
-
-    @Override
-    public int hashCode() {
-        return memberId;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (o instanceof Member) {
-            Member member = (Member) o;
-            if (this.memberId == member.memberId) {
-                return true;
-            } else {
-                return false;
-            }
-        }
-        return false;
-    }
 
     public Member(int memberId, String memberName) {
         this.memberId = memberId;
@@ -52,11 +33,4 @@ public class Member implements Comparable<Member> {
                 ", memberName='" + memberName + '\'' +
                 '}';
     }
-
-    @Override
-    public int compareTo(Member o) {
-        return (this.memberId - o.memberId);
-//        return (this.memberId - o.memberId) *(-1); //내림차순
-    }
-
 }
