@@ -71,7 +71,7 @@ public class GenerateGradeReport {
             String grade;
             if (score.getSubject().getSubjectId() == majorId) {
                 grade = gradeEvaluation[Define.SAB_TYPE].getGrade(score.getPoint());
-            } else if (score.getSubject().getSubjectId() == 3001) {
+            } else if (score.getSubject().getSubjectId() == Define.DANCE) {
                 grade = gradeEvaluation[Define.PF_TYPE].getGrade(score.getPoint());
             } else {
                 grade = gradeEvaluation[Define.AB_TYPE].getGrade(score.getPoint());
