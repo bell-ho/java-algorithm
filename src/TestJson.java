@@ -154,8 +154,6 @@ public class TestJson {
         JSONArray jsonItem = stringTransJson(json);
 
         List<String> list = new ArrayList<>();
-        WebVO wv = new WebVO();
-
         ArrayList<String> starr = new ArrayList<>();
         for (int i = 0; i < jsonItem.toList().size(); i++) {
 
@@ -181,20 +179,5 @@ public class TestJson {
 
         return jsonItem;
     }
-
-}
-
-class WebVO {
-    public String id;
-    public ArrayList<String> emails;
-    public List<String> licenses;
-    public String created;
-    public String lastActivity;
-}
-
-class WebexLicenseVO {
-    public String id;
-    public String name;
-    public String subscriptionId;
 
 }
